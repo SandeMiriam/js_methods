@@ -1,11 +1,27 @@
-function revStr(words){
-    let arr=[];
-    let charArr=words.split("");
-    
-for (let i=0; i<charArr.length;i++){
-        arr.push(charArr[i]);
+// function revStr(words){
+//     let arr=[];
+//     let charArr=words.split("");
+
+// for (let i=0; i<charArr.length;i++){
+//         arr.push(charArr[i]);
+//     }
+//     console.log(arr.join(""));
+// }
+
+// revStr("Minage")
+
+function revStr(str) {
+    let arr = new Array(str.length);
+    let left = 0;
+    let right = str.length - 1
+    while (left <= right) {
+        arr[left] = str[right]
+        arr[right] = str[left]
+        left++;
+        right--;
     }
     console.log(arr.join(""));
 }
 
 revStr("Minage")
+
