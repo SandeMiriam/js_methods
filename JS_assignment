@@ -1,0 +1,11 @@
+function revStr(words){
+    let arr=[];
+    let charArr=words.split("");
+    
+for (let i=0; i<charArr.length;i++){
+        arr.push(charArr[i]);
+    }
+    console.log(arr.join(""));
+}
+
+revStr("Minage")
